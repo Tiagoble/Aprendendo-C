@@ -37,9 +37,18 @@ void main(){
 
     printf("Valor número real: %f\n", real);
     printf("Valor número real duplo: %f\n", real_duplo);
-    printf("Valor número real duplo longo: %e\n", real_duplo_longo);
+    printf("Valor número real duplo longo: %e\n", (double)real_duplo_longo);
     //constante nomeada
     const int MAX = 100;
 
-    printf("Valor constante inteiro: %i\n", MAX);
+    printf("Valor da constante: %i", MAX);   
+
+    //String
+    char nome[] = "Tiago";
+
+    printf("\nMeu nome: %s\n", nome);
+
+    //impressão de endereço de memória
+    int variavel;
+    printf("Endereço da variável: %p\n",&variavel);
 }
